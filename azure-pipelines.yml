@@ -24,3 +24,9 @@ steps:
 
 - script: composer install --no-interaction --prefer-dist
   displayName: 'composer install'
+
+- script: # script path or inline
+  workingDirectory: #
+  displayName: #
+  failOnStderr: #
+  env: { string: string } # mapping of environment variables to add
