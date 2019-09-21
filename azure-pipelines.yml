@@ -24,7 +24,7 @@ steps:
 - task: Bash@3
   inputs:
     targetType: 'inline'
-    script: 'sudo git pull "https://github.com/composer/getcomposer.org.git"
+    script: 'sudo git pull "https://github.com/composer/getcomposer.org.git"'
     
 - script: composer install
   displayName: 'composer install'
