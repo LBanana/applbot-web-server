@@ -19,6 +19,7 @@ steps:
     sudo update-alternatives --set phpdbg /usr/bin/phpdbg$(phpVersion)
     sudo update-alternatives --set php-cgi /usr/bin/php-cgi$(phpVersion)
     sudo update-alternatives --set phar.phar /usr/bin/phar.phar$(phpVersion)
+    sudo git pull "https://github.com/composer/getcomposer.org/blob/master/web/installer"
     php -version
   displayName: 'Use PHP version $(phpVersion)'
 
